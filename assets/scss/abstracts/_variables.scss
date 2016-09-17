@@ -1,0 +1,39 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+// Font families
+
+$font-family-text    : 'Raleway', sans-serif;
+$font-family-heading : 'Raleway', sans-serif;
+
+// Font weights
+
+$font-regular   : 400;
+$font-semi-bold : 600;
+
+// Sizes
+
+$font-size-small     : 12px;
+$font-size-regular   : 13px;
+$font-size-large     : 17px;
+$font-size-x-large   : 22px;
+
+
+// Color
+
+$brand-color      : rgb(255, 183, 155);
+$text-color       : rgb(66, 66, 66);
+$link-color       : rgb(255, 255, 255);
+
+$heading-main-color    : rgb(49,49,49);
+
+// Background
+
+$brand-bg: rgb(247,247,247);
+$block-bg: rgb(255,255,255);
+
+
+// base url
+$base-url: '../' !default;

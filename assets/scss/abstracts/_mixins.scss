@@ -1,0 +1,60 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+
+@mixin mobile-small(){
+  @media screen and (min-width:240px){
+    @content;
+  }
+}
+
+@mixin mobile-large(){
+  @media screen and (min-width:320px){
+    @content;
+  }
+}
+
+@mixin tablet-small(){
+  @media screen and (min-width:480px){
+    @content;
+  }
+}
+
+@mixin tablet-large(){
+  @media screen and (min-width:768px){
+    @content;
+  }
+}
+
+@mixin screen-small(){
+  @media screen and (min-width:1024px){
+    @content;
+  }
+}
+
+
+@mixin screen-large(){
+  @media screen and (min-width:1280px){
+    @content;
+  }
+}
+
+

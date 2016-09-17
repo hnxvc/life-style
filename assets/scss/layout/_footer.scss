@@ -1,0 +1,118 @@
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+.main-footer {
+  margin-top: 100px;
+  border-top: 2px solid $brand-color;
+
+  > .container {
+    position: relative;
+    padding-top: 37px;
+    padding-bottom: 60px;
+  }
+
+  .xh-scroll-top {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 40px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    background: $brand-color;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    @include tablet-large(){
+      right:0;
+    }
+  }
+
+  .xh-wrap-second-heading {
+    margin-bottom: 22px;
+  }
+
+}
+
+.xh-about-content {
+  line-height: 24px;
+}
+
+.xh-about-img {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.xh-list-tweet {
+  .xh-tweet-item {
+    padding-bottom: 26px;
+    border-bottom: 1px solid #eaeaeb;
+  }
+
+  .xh-tweet-title {
+    font-size: $font-size-small;
+    font-weight: $font-semi-bold;
+    text-transform: uppercase;
+    margin-top: 27px;
+    margin-bottom: 20px;
+  }
+
+  .xh-tweet-content {
+    line-height: 24px;
+  }
+
+  .xh-tweet-user {
+    font-size: $font-size-small;
+    color: $brand-color;
+    display: block;
+    margin-top: 9px;
+  }
+
+}
+
+.xh-subscribed {
+  .xh-subscribed-content {
+    line-height: 24px;
+  }
+
+  .xh-form-news-letter {
+    margin-top: 23px;
+
+    input {
+      display: block;
+      width: 100%;
+      font-size: 12px;
+      text-transform: uppercase;
+      height: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border: none;
+      margin-bottom: 10px;
+
+      &::-webkit-input-placeholder {
+        color: $heading-main-color;
+      }
+
+      &:-moz-placeholder {
+        color: $heading-main-color;
+        opacity: 1;
+      }
+
+      &::-moz-placeholder {
+        color: $heading-main-color;
+        opacity: 1;
+      }
+
+      &:-ms-input-placeholder {
+        color: $heading-main-color;
+      }
+
+      &:not([type="submit"]) {
+        box-shadow: 1px 1px 2px #ececec;
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,61 @@
+/* --------------------------------------------------------------------------
+   CSS helper classes
+   -------------------------------------------------------------------------- */
+
+
+
+.v-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.no-padding{
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+
+.no-margin{
+  margin-left:0 !important;
+  margin-right:0 !important;
+}
+
+.clear {
+  clear: both;
+  float: none;
+}
+
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.hide-text {
+  overflow: hidden;
+  padding: 0;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

@@ -1,0 +1,142 @@
+.xh-contact-page{
+ .xh-contact-map{
+    position:relative;
+    padding-bottom:33.3%;
+     iframe{
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    }
+  }
+  .xh-contact-content{
+    background:$block-bg;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom:30px;
+    line-height:25px;
+    font-size:14px;
+    @include tablet-large(){
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .xh-wrap-second-heading{
+      padding-bottom: 26px;
+      margin-bottom: 22px;
+    }
+
+    ul{
+      margin:0;
+      padding:0;
+      list-style:none;
+      li{
+        margin-bottom:6px;
+      }
+      i{
+        color:$brand-color;
+        margin-right: 8px;
+        font-size: 15px;
+      }
+    }
+
+  }
+
+}
+
+// comment form
+
+.xh-box-shadow{
+  box-shadow:1px 1px 3px #ececec;
+  border-right:1px solid #ececec;
+  border-bottom:1px solid #ececec;
+}
+
+.xh-comment-form{
+  margin-top:30px;
+  .xh-wrap-second-heading{
+    margin-bottom:30px;
+    font-weight:$font-semi-bold;
+  }
+
+  .xh-top-form{
+    margin-left:-10px;
+    margin-right:-10px;
+    .xh-form-col{
+      width:100%;
+      float:left;
+      padding-left:10px;
+      padding-right:10px;
+      @include tablet-large(){
+        width:50%;
+      }
+    }
+  }
+  input{
+    display:block;
+    height:50px;
+    font-size:12px;
+    text-transform:uppercase;
+    color:$text-color;
+    padding-left:20px;
+    padding-right:20px;
+    border:none;
+    width:100%;
+    margin-bottom:20px;
+    &::-webkit-input-placeholder {
+      color: $text-color;
+    }
+
+    &:-moz-placeholder {
+      color: $text-color;
+      opacity: 1;
+    }
+
+    &::-moz-placeholder {
+      color: $text-color;
+      opacity: 1;
+    }
+
+    &:-ms-input-placeholder {
+      color: $text-color;
+    }
+    &[type="submit"]{
+      display:inline-block;
+      background:$brand-color;
+      width:auto;
+      color:#fff;
+      height:auto;
+    }
+  }
+
+  textarea{
+    display:block;
+    resize:none;
+    border:none;
+    height:245px;
+    text-transform:uppercase;
+    padding:20px;
+    width:100%;
+    margin-bottom:20px;
+    &::-webkit-input-placeholder {
+      color: $text-color;
+    }
+
+    &:-moz-placeholder {
+      color: $text-color;
+      opacity: 1;
+    }
+
+    &::-moz-placeholder {
+      color: $text-color;
+      opacity: 1;
+    }
+
+    &:-ms-input-placeholder {
+      color: $text-color;
+    }
+  }
+
+
+}

@@ -1,0 +1,52 @@
+.xh-brand{
+  color:$brand-color;
+  text-transform:uppercase;
+}
+.xh-content-about{
+  font-size:14px;
+  line-height:25px;
+  padding-top:0 !important;
+
+  .xh-post-content{
+    background:$block-bg;
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom:16px;
+    @include tablet-large(){
+      padding-left:30px;
+      padding-right:30px;
+    }
+    h5{
+      font-size:14px;
+      color:$text-color;
+      margin-top: 30px;
+      margin-bottom: 16px;
+    }
+    .xh-title-about-me{
+      text-transform:uppercase;
+      margin-top: 50px;
+      margin-bottom: 35px;
+    }
+  }
+  .xh-wrap-second-heading{
+    padding-top: 18px;
+    padding-bottom:27px;
+  }
+
+  .xh-list-about{
+    margin:0;
+    padding:0;
+    list-style:none;
+    li{
+      margin-bottom:0;
+    }
+  }
+
+  .xh-list-about{
+    .xh-brand{
+      letter-spacing:1px;
+    }
+  }
+
+
+}

@@ -1,0 +1,206 @@
+/* --------------------------------------------------------------------------
+   Widget
+   -------------------------------------------------------------------------- */
+
+.xh-widget {
+  background: $block-bg;
+  margin-bottom: 30px;
+  box-shadow: 1px 1px 2px #ececec;
+  padding-top: 8px;
+  padding-bottom: 18px;
+  padding-left:10px;
+  padding-right:10px;
+  @include tablet-large(){
+    padding-left:20px;
+    padding-right:20px;
+  }
+}
+
+.xh-widget-adv{
+  padding-top:18px;
+}
+
+/* search
+-------------------------------------------------------------------------- */
+
+.xh-widget-search {
+  padding-left:0;
+  padding-right:0;
+  padding-top:0;
+  padding-bottom:0;
+  input {
+    background: none;
+    border: none;
+    display: block;
+    height: 50px;
+    &[type="text"] {
+      width: 80%;
+      float: left;
+      padding-left: 20px;
+      padding-right: 10px;
+      text-transform: uppercase;
+    }
+    &[type="submit"] {
+      width: 20%;
+      float: left;
+      background: image('icon-search.jpg') center center no-repeat;
+      color: transparent;
+    }
+    &::-webkit-input-placeholder {
+      color: $heading-main-color;
+    }
+    &:-moz-placeholder {
+      color: $heading-main-color;
+      opacity: 1;
+    }
+    &::-moz-placeholder {
+      color: $heading-main-color;
+      opacity: 1;
+    }
+    &:-ms-input-placeholder {
+      color: $heading-main-color;
+    }
+  }
+}
+
+
+/* popular post
+-------------------------------------------------------------------------- */
+
+.xh-widget-popular-post {
+
+  ul {
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+    li {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eaeaeb;
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }
+  }
+  .xh-post-thumbnail {
+    width: precent(70px/230px);
+    float: left;
+  }
+  .xh-post-content {
+    width: precent(150px/230px);
+    float: left;
+    padding-left: 10px;
+    .xh-post-title {
+      font-size: $font-size-regular;
+      margin-top: 0;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      a{
+        color:$text-color;
+      }
+    }
+    .xh-post-date {
+      font-size: $font-size-regular;
+      text-transform: uppercase;
+    }
+  }
+}
+
+
+/* categories
+-------------------------------------------------------------------------- */
+
+.xh-widget-category {
+
+  ul {
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+    li {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #eaeaeb;
+      font-size: $font-size-regular;
+      margin-top: 0;
+      text-transform: uppercase;
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+      a{
+        color:$heading-main-color;
+        font-weight:$font-semi-bold;
+      }
+    }
+  }
+}
+
+/* instagram
+-------------------------------------------------------------------------- */
+.xh-widget-instagram{
+
+  ul{
+    margin-top:30px;
+    padding:0;
+    margin-left:-1px;
+    margin-right:-1px;
+  }
+  li{
+    display:block;
+    float:left;
+    width:33.3333%;
+    padding:1px;
+    img{
+      width:100%;
+    }
+  }
+}
+/* social media
+-------------------------------------------------------------------------- */
+.xh-widget-social-media{
+  .xh-wrap-second-heading{
+     margin-bottom:30px;
+  }
+  ul{
+    li a{
+      width:39px;
+    }
+  }
+  .xh-btn-share{
+    width:29px;
+  }
+}
+
+/* post slider
+-------------------------------------------------------------------------- */
+.xh-widget-post-slider{
+  .xh-list-post-slide{
+    position:relative;
+    padding-top:30px;
+    .slick-arrow{
+      position:absolute;
+      width:36px;
+      height:36px;
+      text-align:center;
+      line-height:36px;
+      background:$brand-color;
+      color:#fff;
+      top:50%;
+      z-index:9;
+      cursor:pointer;
+      font-size:18px;
+    }
+    .slick-next{
+      right:0;
+      left:auto;
+    }
+    .slick-prev{
+      left:0;
+      right:auto;
+    }
+  }
+  img{
+    width:100%;
+  }
+}
